@@ -1,4 +1,4 @@
-const music = new Audio('vande.mp3');
+const music = new Audio('First Love (Live 2023).mp3');
 
 // create Array 
 
@@ -120,8 +120,9 @@ const makeAllBackgrounds = () =>{
     })
 }
 
-let index = 0;
+let index = 0;  
 let poster_master_play = document.getElementById('poster_master_play');
+let download_music = document.getElementById('download_music');
 let title = document.getElementById('title');
 Array.from(document.getElementsByClassName('playListPlay')).forEach((element)=>{
     element.addEventListener('click', (e)=>{
@@ -130,6 +131,7 @@ Array.from(document.getElementsByClassName('playListPlay')).forEach((element)=>{
         e.target.classList.remove('bi-play-circle-fill');
         e.target.classList.add('bi-pause-circle-fill');
         music.src = `audio/${index}.mp3`;
+        download_music.href = `audio/${index}.mp3`;
         poster_master_play.src =`img/${index}.jpg`;
         music.play();
         let song_title = songs.filter((ele)=>{
@@ -139,15 +141,16 @@ Array.from(document.getElementsByClassName('playListPlay')).forEach((element)=>{
         song_title.forEach(ele =>{
             let {songName} = ele;
             title.innerHTML = songName;
+            download_music.setAttribute('download', songName);
         })
         masterPlay.classList.remove('bi-play-fill');
         masterPlay.classList.add('bi-pause-fill');
         wave.classList.add('active2');
-        music.addEventListener('ended',()=>{
-            masterPlay.classList.add('bi-play-fill');
-            masterPlay.classList.remove('bi-pause-fill');
-            wave.classList.remove('active2');
-        })
+        // music.addEventListener('ended',()=>{
+        //     masterPlay.classList.add('bi-play-fill');
+        //     masterPlay.classList.remove('bi-pause-fill');
+        //     wave.classList.remove('active2');
+        // })
         makeAllBackgrounds();
         Array.from(document.getElementsByClassName('songItem'))[`${index-1}`].style.background = "rgb(105, 105, 170, .1)";
     })
@@ -190,11 +193,42 @@ seek.addEventListener('change', ()=>{
 })
 
 music.addEventListener('ended', ()=>{
-    masterPlay.classList.add('bi-play-fill');
-    masterPlay.classList.remove('bi-pause-fill');
-    wave.classList.remove('active2');
-})
+    masterPlay.classList.add('bi-pause-fill');
+    wave.classList.add('active2');
+    index ++;
+    music.src = `audio/${index}.mp3`;
+    download_music.href = `audio/${index}.mp3`;
+    poster_master_play.src =`img/${index}.jpg`;
+    music.play();
+    let song_title = songs.filter((ele)=>{
+        return ele.id == index;
+    })
 
+    song_title.forEach(ele =>{
+        let {songName} = ele;
+        title.innerHTML = songName;
+        download_music.setAttribute('download', songName);
+    })
+    makeAllBackgrounds();
+    Array.from(document.getElementsByClassName('songItem'))[`${index-1}`].style.background = "rgb(105, 105, 170, .1)";
+    makeAllPlays();
+    document.getElementsByClassName('playListPlay')[index-1].classList.remove('bi-play-circle-fill');
+    document.getElementsByClassName('playListPlay')[index-1].classList.add('bi-pause-circle-fill');
+})
+let shuffle = document.getElementsByClassName('shuffle')[0];
+
+shuffle.addEventListener('click', ()=>{
+    let a = shuffle.innerHTML;
+
+    switch (a) {
+        case "next":
+            shuffle.classList.add('bi-repeat');
+            shuffle.classList.remove('bi-music-note-beamed');
+            break;
+    }
+});
+
+// alert(shuffle.innerHTML);
 
 let vol_icon = document.getElementById('vol_icon');
 let vol = document.getElementById('vol');
@@ -234,6 +268,7 @@ back.addEventListener('click', ()=>{
     if (index < 1) {
         index = Array.from(document.getElementsByClassName('songItem')).length;
     }
+    download_music.href = `audio/${index}.mp3`;
     music.src = `audio/${index}.mp3`;
     poster_master_play.src =`img/${index}.jpg`;
     music.play();
@@ -244,6 +279,7 @@ back.addEventListener('click', ()=>{
     song_title.forEach(ele =>{
         let {songName} = ele;
         title.innerHTML = songName;
+        download_music.setAttribute('download', songName);
     })
     makeAllPlays()
 
@@ -260,6 +296,7 @@ next.addEventListener('click', ()=>{
         index = 1;
         }
     music.src = `audio/${index}.mp3`;
+    download_music.href = `audio/${index}.mp3`;
     poster_master_play.src =`img/${index}.jpg`;
     music.play();
     let song_title = songs.filter((ele)=>{
@@ -269,6 +306,7 @@ next.addEventListener('click', ()=>{
     song_title.forEach(ele =>{
         let {songName} = ele;
         title.innerHTML = songName;
+        download_music.setAttribute('download', songName);
     })
     makeAllPlays()
 
