@@ -184,7 +184,7 @@ music.addEventListener('timeupdate',()=>{
     let progressbar = parseInt((music.currentTime/music.duration)*100);
     seek.value = progressbar;
     let seekbar = seek.value;
-    bar2.style.width = `${seekbar}%`;
+    bar2.style.width = `${seekbar}%`;   
     dot.style.left = `${seekbar}%`;
 })
 

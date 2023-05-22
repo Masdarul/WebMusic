@@ -91,6 +91,7 @@
             </div>
             <div class="user">
                 <img src="img/profil.jpg" alt="User" title="Profil">
+                <a href="logout.php" title="Logout"><i class="bi bi-door-closed-fill"></i></a>
             </div>
         </nav>
         <div class="content">

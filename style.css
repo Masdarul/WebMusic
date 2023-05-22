@@ -496,19 +496,26 @@ header .song_side nav .search input {
 }
 
 header .song_side nav .user {
-    position: relative;
-    width: 30px;
+    width: 70px;
     height: 30px;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     cursor: pointer;
+    /* border: 1px solid #fff; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 header .song_side nav .user img {
-    position: absolute;
     width: 30px;
     height: 30px;
     border-radius: 50%;
     box-shadow: 2px 2px 8px #131312;
+}
+header .song_side nav .user a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
 }
 
 header .song_side .content {

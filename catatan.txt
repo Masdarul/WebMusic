@@ -1,0 +1,53 @@
+<!-- <?php
+
+// session_start();
+
+// include('db_cn.php'); 
+
+// if (isset($_POST['submit'])) {
+
+//     $user_name = $_POST['user_name'];
+//     $user_email = $_POST['user_email'];
+//     $user_password = $_POST['user_password'];
+//     $user_re_password = $_POST['user_re_password'];
+
+//     if(empty($user_name) && empty($user_email) && empty($user_password) && empty($user_re_password)){
+//         echo "harus diisi";
+//     } else {
+
+
+//         //         $query = "insert into users (nama, email, password) VALUES ('$user_name','$user_email','$user_password')";
+//         //         $result = mysqli_query($cn,$query);
+//         $query = "insert into users (nama, email, password) VALUES ('$user_name','$user_email','$user_password')";
+//         $result = mysqli_query($cn,$query);
+//         echo "berhasil";
+//     };
+
+// }
+
+    // if (!empty($user_name) && !empty($user_email) && !empty($user_password) && !is_numeric($user_name)) {
+    //     if ($user_password === $user_re_password) {
+    //         $query = "insert into users (nama, email, password) VALUES ('$user_name', '$user_email', '$user_password')";
+    //         mysqli_query($cn, $query);
+    //         header("Location: login.php");
+    //     } else {
+    //         echo ('Password Salah');
+    //     }
+
+    // }
+
+
+?> -->
+
+ <!-- <?php
+        // include('db_cn.php');
+        // if(isset($_POST['submit'])) {
+        //         $user_name = $_POST['user_name'];
+        //         $user_email = $_POST['user_email'];
+        //         $user_password = $_POST['user_password'];
+        //         $user_re_password = $_POST['user_re_password'];
+        //         $query = "insert into user (nama, email, password) VALUES ('$user_name','$user_email','$user_password')";
+        //         $result = mysqli_query($cn,$query);
+                
+        //     }
+        ?>  -->
