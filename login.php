@@ -1,3 +1,23 @@
+<?php
+
+session_start();
+$msg = false ;
+include('db_cn.php');
+if (isset($_POST['user_name'])) {
+    $user_name = $_POST['user_name'];
+    $user_password = $_POST['user_password'];
+
+    $query  =  "select * from user where nama = '".$user_name."' AND password = '".$user_password."' limit 1";
+
+    $result = mysqli_query($cn, $query);
+    if (mysqli_num_rows($result)==1) {
+        header("Location: welcome.php");
+    } else {
+        $msg = "Password Salah";
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="ID">
 
@@ -26,7 +46,7 @@
                     <label for="password">Password :</label>
                     <input type="password" name="user_password" placeholder="Password Anda" required minlength="8">
                 </div>
-                <input type="submit" value="Sign Up" class="submit">
+                <input type="submit" value="Login" class="submit" name="submit">
                 <div class="check">
                     <input type="checkbox"> <span> Ingatkan Saya</span>
                 </div>
@@ -36,7 +56,12 @@
     </div>
     <div class="right_bx1">
         <img src="login.png" width="90%">
-        <h3>Password Salah</h3>
+        <?php 
+            if ($msg) {
+                echo  ("<h3>$msg</h3>");
+            }
+            
+        ?>
     </div>
     <script src="jquery.js"></script>
 </header>

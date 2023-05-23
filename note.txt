@@ -1,0 +1,2 @@
+Isset = isset adalah fungsi php yang digunakan untuk dapat memeriksa apakah sebuah variabel telah di set.
+mysqli_num_row = Fungsi mysql_num_rows pada php adalah untuk mengetahui berapa jumlah baris di dalam tabel database yang dipanggil oleh perintah mysql_query() sehingga nilai dapat ditampilkan dalam bentuk angka numerik.
