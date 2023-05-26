@@ -220,37 +220,37 @@
                    <a href="LiSA.html"><img src="img/LiSA.jpg" alt="LiSA" title="LiSA"></a>
                 </li>
                 <li>
-                    <img src="img/Ikura.jpg" alt="Lilas Ikura" title="Lilas Ikura">
+                   <a href="ikura.html"> <img src="img/Ikura.jpg" alt="Lilas Ikura" title="Lilas Ikura"></a>
                 </li>
                 <li>
-                    <img src="img/Milet.jpg" alt="Milet" title="Milet">
+                    <a href="milet.html"> <img src="img/Milet.jpg" alt="Milet" title="Milet"> </a>
                 </li>
                 <li>
-                    <img src="img/Yoasobi.jpg" alt="Yoasobi" title="Yoasobi">
+                    <a href="Yoasobi.html"> <img src="img/Yoasobi.jpg" alt="Yoasobi" title="Yoasobi"> </a>
                 </li>
                 <li>
-                    <img src="img/kenshi_yonezu.jpg" alt="kenshi yonezu" title="kenshi yonezu">
+                    <a href="Kenshi_Yonezu.html">  <img src="img/kenshi_yonezu.jpg" alt="kenshi yonezu" title="kenshi yonezu"> </a>
                 </li>
                 <li>
-                    <img src="img/Adieu.jpg" alt="Adieu" title="Adieu">
+                    <a href="Adiue.html">  <img src="img/Adieu.jpg" alt="Adieu" title="Adieu"> </a>
                 </li>
                 <li>
-                    <img src="img/Juju.jpg" alt="Juju" title="Juju">
+                    <a href="Juju.html">  <img src="img/Juju.jpg" alt="Juju" title="Juju"> </a>
                 </li>
                 <li>
-                    <img src="img/MWAM.png" alt="MWAM" title="MWAM">
+                    <a href="MWAM.html">   <img src="img/MWAM.png" alt="MWAM" title="MWAM"> </a> 
                 </li>
                 <li>
-                    <img src="img/One_Ok_Rock.jpg" alt="One Ok Rock" title="One Ok Rock">
+                    <a href="OKR.html">  <img src="img/One_Ok_Rock.jpg" alt="One Ok Rock" title="One Ok Rock"> </a>
                 </li>
                 <li>
-                    <img src="img/Asca.jpg" alt="Asca" title="Asca">
+                    <a href="Asca.html">  <img src="img/Asca.jpg" alt="Asca" title="Asca"></a>
                 </li>
                 <li>
-                    <img src="img/Hikaru_utada.jpg" alt="Hikaru Utada" title="Hikaru Utada">
+                    <a href="Hikaru_Utada.html">  <img src="img/Hikaru_utada.jpg" alt="Hikaru Utada" title="Hikaru Utada"> </a>
                 </li>
                 <li>
-                    <img src="img/Dindism.jpg" alt="Official HIGE DANdism" title="Official HIGE DANdism">
+                    <a href="dism.html">   <img src="img/Dindism.jpg" alt="Official HIGE DANdism" title="Official HIGE DANdism"> </a>
                 </li>
                 <!-- change all img  -->
             </div>
