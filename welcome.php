@@ -217,7 +217,7 @@
             </div>
             <div class="item">
                 <li>
-                    <img src="img/LiSA.jpg" alt="LiSA" title="LiSA">
+                   <a href="LiSA.html"><img src="img/LiSA.jpg" alt="LiSA" title="LiSA"></a>
                 </li>
                 <li>
                     <img src="img/Ikura.jpg" alt="Lilas Ikura" title="Lilas Ikura">
