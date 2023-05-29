@@ -7,13 +7,13 @@ const songs = [
         id:'1',
         songName:` Gurenge<br>
         <div class="subtitle">LiSA</div>`,
-        poster: "../img/LISA/1.jpg"
+        poster: "https://github.com/Masdarul/WebMusic/blob/main/img/LISA/1.jpg"
     },
     {
         id:'2',
         songName:` Homura <br>
         <div class="subtitle">LiSA</div>`,
-        poster: "../img/LISA/2.jpg"
+        poster: "https://github.com/Masdarul/WebMusic/blob/main/img/LISA/2.jpg"
     },
     // all object type 
     {
