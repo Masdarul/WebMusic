@@ -11,7 +11,7 @@ if (isset($_POST['user_name'])) {
 
     $result = mysqli_query($cn, $query);
     if (mysqli_num_rows($result)==1) {
-        header("Location: welcome.php");
+        header("Location: welcome.html");
     } else {
         $msg = "Password Salah";
     }
