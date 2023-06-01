@@ -138,9 +138,9 @@ Array.from(document.getElementsByClassName('playListPlay')).forEach((element)=>{
         makeAllPlays();
         e.target.classList.remove('bi-play-circle-fill');
         e.target.classList.add('bi-pause-circle-fill');
-        music.src = `../audio/LISA/${index}.mp3`;
-        download_music.href = `../audio/LISA/${index}.mp3`;
-        poster_master_play.src =`../img/LISA/${index}.jpg`;
+        music.src = `https://github.com/Masdarul/WebMusic/raw/main/audio/LISA/${index}.mp3`;
+        download_music.href = `https://github.com/Masdarul/WebMusic/raw/main/audio/LISA/${index}.mp3`;
+        poster_master_play.src =`https://raw.githubusercontent.com/Masdarul/WebMusic/main/img/LISA/${index}.jpg`;
         music.play();
         let song_title = songs.filter((ele)=>{
             return ele.id == index;
@@ -206,9 +206,9 @@ const next_music = () => {
         index == 0;
     }
     index ++;
-    music.src = `../audio/LISA/${index}.mp3`;
-    download_music.href = `../audio/LISA/${index}.mp3`;
-    poster_master_play.src =`../img/LISA/${index}.jpg`;
+    music.src = `https://github.com/Masdarul/WebMusic/raw/main/audio/LISA/${index}.mp3`;
+    download_music.href = `https://github.com/Masdarul/WebMusic/raw/main/audio/LISA/${index}.mp3`;
+    poster_master_play.src =`https://raw.githubusercontent.com/Masdarul/WebMusic/main/img/LISA/${index}.jpg`;
     music.play();
     let song_title = songs.filter((ele)=>{
         return ele.id == index;
@@ -230,9 +230,9 @@ const repeat_music = () => {
     masterPlay.classList.add('bi-pause-fill');
     wave.classList.add('active2');
     index;
-    music.src = `../audio/LISA/${index}.mp3`;
-    download_music.href = `../audio/LISA/${index}.mp3`;
-    poster_master_play.src =`../img/LISA/${index}.jpg`;
+    music.src = `https://github.com/Masdarul/WebMusic/raw/main/audio/LISA/${index}.mp3`;
+    download_music.href = `https://github.com/Masdarul/WebMusic/raw/main/audio/LISA/${index}.mp3`;
+    poster_master_play.src =`https://raw.githubusercontent.com/Masdarul/WebMusic/main/img/LISA/${index}.jpg`;
     music.play();
     let song_title = songs.filter((ele)=>{
         return ele.id == index;
@@ -257,9 +257,9 @@ const random_music = () => {
         index == 0;
     }
     index = Math.floor((Math.random()* songs.length)+1);
-    music.src = `../audio/LISA/${index}.mp3`;
-    download_music.href = `../audio/LISA/${index}.mp3`;
-    poster_master_play.src =`../imgLiSA//${index}.jpg`;
+    music.src = `https://github.com/Masdarul/WebMusic/raw/main/audio/LISA/${index}.mp3`;
+    download_music.href = `https://github.com/Masdarul/WebMusic/raw/main/audio/LISA/${index}.mp3`;
+    poster_master_play.src =`https://raw.githubusercontent.com/Masdarul/WebMusic/main/img/LISA/${index}.jpg`;
     music.play();
     let song_title = songs.filter((ele)=>{
         return ele.id == index;
@@ -358,9 +358,9 @@ back.addEventListener('click', ()=>{
     if (index < 1) {
         index = Array.from(document.getElementsByClassName('songItem')).length;
     }
-    download_music.href = `../audio/LISA/${index}.mp3`;
-    music.src = `../audio/LISA/${index}.mp3`;
-    poster_master_play.src =`../img/LISA/${index}.jpg`;
+    download_music.href = `https://github.com/Masdarul/WebMusic/raw/main/audio/LISA/${index}.mp3`;
+    music.src = `https://github.com/Masdarul/WebMusic/raw/main/audio/LISA/${index}.mp3`;
+    poster_master_play.src =`https://raw.githubusercontent.com/Masdarul/WebMusic/main/img/LISA/${index}.jpg`;
     music.play();
     let song_title = songs.filter((ele)=>{
         return ele.id == index;
@@ -385,9 +385,9 @@ next.addEventListener('click', ()=>{
     if (index > Array.from(document.getElementsByClassName('songItem')).length) {
         index = 1;
         }
-    music.src = `../audio/LISA/${index}.mp3`;
-    download_music.href = `../audio/LISA/${index}.mp3`;
-    poster_master_play.src =`../img/LISA/${index}.jpg`;
+    music.src = `https://github.com/Masdarul/WebMusic/raw/main/audio/LISA/${index}.mp3`;
+    download_music.href = `https://github.com/Masdarul/WebMusic/raw/main/audio/LISA/${index}.mp3`;
+    poster_master_play.src =`https://raw.githubusercontent.com/Masdarul/WebMusic/main/img/LISA/${index}.jpg`;
     music.play();
     let song_title = songs.filter((ele)=>{
         return ele.id == index;
