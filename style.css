@@ -148,6 +148,11 @@ header .menu_side .menu_song li img {
 header .menu_side .menu_song li h5 {
     font-size: 11px;
     margin-left: 15px;
+    /* border: 1px solid #fff; */
+    width: 170px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 header .menu_side .menu_song li h5 .subtitle {
@@ -408,6 +413,14 @@ header .master_play .vol .dot::before {
 header .song_side {
     z-index: 2;
 }
+/* header .song_side::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    background: url('https://raw.githubusercontent.com/Masdarul/WebMusic/main/img/LiSA.png');
+    z-index: -1;
+} */
 
 header .song_side::before {
     content: '';
@@ -415,7 +428,7 @@ header .song_side::before {
     background-position: right;
     width: 100%;
     height: 300px;
-    background: url('/img/LiSA.png');
+    background: url('https://raw.githubusercontent.com/Masdarul/WebMusic/main/img/LiSA.png');
     z-index: -1;
     margin-left: 144px;
 }
