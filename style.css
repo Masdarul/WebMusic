@@ -725,3 +725,9 @@ header .song_side .popular_artists .item li img {
     border-radius: 50%;
     position: absolute;
 }
+summary::marker {
+    content: "\002B" " ";
+}
+details[open] summary::marker {
+    content: "\2212" " ";
+}

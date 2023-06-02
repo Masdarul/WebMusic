@@ -6,57 +6,51 @@ const music = new Audio('First Love (Live 2023).mp3');
 const songs = [
     {
         id:'1',
-        songName:` Kick Back<br>
-        <div class="subtitle">Kenshi Yonezu</div>`,
-        poster: "https://raw.githubusercontent.com/Masdarul/WebMusic/main/img/Kenshi_Yonezu/1.jpg"
+        songName:` Kizuna No Kiseki<br>
+        <div class="subtitle">Man With A Mission feat Milet</div>`,
+        poster: "https://raw.githubusercontent.com/Masdarul/WebMusic/main/img/MWAM/1.jpg"
     },
     {
         id:'2',
-        songName:` Lemon <br>
-        <div class="subtitle">Kenshi Yonezu</div>`,
-        poster: "https://raw.githubusercontent.com/Masdarul/WebMusic/main/img/Kenshi_Yonezu/2.png"
+        songName:` Koi Kogare<br>
+        <div class="subtitle">Man With A Mission Feat Milet</div>`,
+        poster: "https://raw.githubusercontent.com/Masdarul/WebMusic/main/img/MWAM/2.jpg"
     },
     {
         id:'3',
-        songName:` Peace Sign<br>
-        <div class="subtitle">Kenshi Yonezu</div>`,
-        poster: "https://raw.githubusercontent.com/Masdarul/WebMusic/main/img/Kenshi_Yonezu/3.jpg"
+        songName:` Merry-Go-Round<br>
+        <div class="subtitle">Man With A Mission</div>`,
+        poster: "https://raw.githubusercontent.com/Masdarul/WebMusic/main/img/MWAM/3.jpg"
     },
     {
         id:'4',
-        songName:` M78 <br>
-        <div class="subtitle">Kenshi Yonezu</div>`,
-        poster: "https://raw.githubusercontent.com/Masdarul/WebMusic/main/img/Kenshi_Yonezu/4.jpg"
+        songName:` Raise your flag <br>
+        <div class="subtitle">Man With A Mission</div>`,
+        poster: "https://raw.githubusercontent.com/Masdarul/WebMusic/main/img/MWAM/4.jpg"
     },
     {
         id:'5',
-        songName:` Uma to Shika<br>
-        <div class="subtitle">Kenshi Yonezu</div>`,
-        poster: "https://raw.githubusercontent.com/Masdarul/WebMusic/main/img/Kenshi_Yonezu/5.jpg"
+        songName:` Remember Me <br>
+        <div class="subtitle">Man With A Mission</div>`,
+        poster: "https://raw.githubusercontent.com/Masdarul/WebMusic/main/img/MWAM/5.jpg"
     },
     {
         id:'6',
-        songName:` Orion <br>
-        <div class="subtitle">Kenshi Yonezu</div>`,
-        poster: "https://raw.githubusercontent.com/Masdarul/WebMusic/main/img/Kenshi_Yonezu/6.jpg"
+        songName:` My Hero <br>
+        <div class="subtitle">Man With A Mission</div>`,
+        poster: "https://raw.githubusercontent.com/Masdarul/WebMusic/main/img/MWAM/6.jpg"
     },
     {
         id:'7',
-        songName:` Uchiagehanabi<br>
-        <div class="subtitle">Kenshi Yonezu</div>`,
-        poster: "https://raw.githubusercontent.com/Masdarul/WebMusic/main/img/Kenshi_Yonezu/7.jpg"
+        songName:` Reiwa<br>
+        <div class="subtitle">Man With A Mission Feat Milet</div>`,
+        poster: "https://raw.githubusercontent.com/Masdarul/WebMusic/main/img/MWAM/7.jpg"
     },
     {
         id:'8',
-        songName:` Haiiro To Ao<br>
-        <div class="subtitle">Kenshi Yonezu Feat Masaki Suda</div>`,
-        poster: "https://raw.githubusercontent.com/Masdarul/WebMusic/main/img/Kenshi_Yonezu/8.jpg"
-    },
-    {
-        id:'9',
-        songName:` Moonlight<br>
-        <div class="subtitle">Kenshi Yonezu</div>`,
-        poster: "https://raw.githubusercontent.com/Masdarul/WebMusic/main/img/Kenshi_Yonezu/9.jpg"
+        songName:` Reiwa<br>
+        <div class="subtitle">Man With A Mission Feat Milet</div>`,
+        poster: "https://raw.githubusercontent.com/Masdarul/WebMusic/main/img/MWAM/7.jpg"
     },
 ]
 Array.from(document.getElementsByClassName('songItem')).forEach((element, i)=>{
@@ -104,9 +98,9 @@ Array.from(document.getElementsByClassName('playListPlay')).forEach((element)=>{
         makeAllPlays();
         e.target.classList.remove('bi-play-circle-fill');
         e.target.classList.add('bi-pause-circle-fill');
-        music.src = `https://github.com/Masdarul/WebMusic/raw/main/audio/Kenshi_Yonezu/${index}.mp3`;
-        download_music.href = `https://github.com/Masdarul/WebMusic/raw/main/audio/Kenshi_Yonezu/${index}.mp3`;
-        poster_master_play.src =`https://raw.githubusercontent.com/Masdarul/WebMusic/main/img/Kenshi_Yonezu/${index}.jpg`;
+        music.src = `https://github.com/Masdarul/WebMusic/raw/main/audio/MWAM/${index}.mp3`;
+        download_music.href = `https://github.com/Masdarul/WebMusic/raw/main/audio/MWAM/${index}.mp3`;
+        poster_master_play.src =`https://raw.githubusercontent.com/Masdarul/WebMusic/main/img/MWAM/${index}.jpg`;
         music.play();
         let song_title = songs.filter((ele)=>{
             return ele.id == index;
@@ -172,9 +166,9 @@ const next_music = () => {
         index == 0;
     }
     index ++;
-    music.src = `https://github.com/Masdarul/WebMusic/raw/main/audio/Kenshi_Yonezu/${index}.mp3`;
-    download_music.href = `https://github.com/Masdarul/WebMusic/raw/main/audio/Kenshi_Yonezu/${index}.mp3`;
-    poster_master_play.src =`https://raw.githubusercontent.com/Masdarul/WebMusic/main/img/Kenshi_Yonezu/${index}.jpg`;
+    music.src = `https://github.com/Masdarul/WebMusic/raw/main/audio/MWAM/${index}.mp3`;
+    download_music.href = `https://github.com/Masdarul/WebMusic/raw/main/audio/MWAM/${index}.mp3`;
+    poster_master_play.src =`https://raw.githubusercontent.com/Masdarul/WebMusic/main/img/MWAM/${index}.jpg`;
     music.play();
     let song_title = songs.filter((ele)=>{
         return ele.id == index;
@@ -196,9 +190,9 @@ const repeat_music = () => {
     masterPlay.classList.add('bi-pause-fill');
     wave.classList.add('active2');
     index;
-    music.src = `https://github.com/Masdarul/WebMusic/raw/main/audio/Kenshi_Yonezu/${index}.mp3`;
-    download_music.href = `https://github.com/Masdarul/WebMusic/raw/main/audio/Kenshi_Yonezu/${index}.mp3`;
-    poster_master_play.src =`https://raw.githubusercontent.com/Masdarul/WebMusic/main/img/Kenshi_Yonezu/${index}.jpg`;
+    music.src = `https://github.com/Masdarul/WebMusic/raw/main/audio/MWAM/${index}.mp3`;
+    download_music.href = `https://github.com/Masdarul/WebMusic/raw/main/audio/MWAM/${index}.mp3`;
+    poster_master_play.src =`https://raw.githubusercontent.com/Masdarul/WebMusic/main/img/MWAM/${index}.jpg`;
     music.play();
     let song_title = songs.filter((ele)=>{
         return ele.id == index;
@@ -223,9 +217,9 @@ const random_music = () => {
         index == 0;
     }
     index = Math.floor((Math.random()* songs.length)+1);
-    music.src = `https://github.com/Masdarul/WebMusic/raw/main/audio/Kenshi_Yonezu/${index}.mp3`;
-    download_music.href = `https://github.com/Masdarul/WebMusic/raw/main/audio/Kenshi_Yonezu/${index}.mp3`;
-    poster_master_play.src =`https://raw.githubusercontent.com/Masdarul/WebMusic/main/img/Kenshi_Yonezu/${index}.jpg`;
+    music.src = `https://github.com/Masdarul/WebMusic/raw/main/audio/MWAM/${index}.mp3`;
+    download_music.href = `https://github.com/Masdarul/WebMusic/raw/main/audio/MWAM/${index}.mp3`;
+    poster_master_play.src =`https://raw.githubusercontent.com/Masdarul/WebMusic/main/img/MWAM/${index}.jpg`;
     music.play();
     let song_title = songs.filter((ele)=>{
         return ele.id == index;
@@ -324,9 +318,9 @@ back.addEventListener('click', ()=>{
     if (index < 1) {
         index = Array.from(document.getElementsByClassName('songItem')).length;
     }
-    download_music.href = `https://github.com/Masdarul/WebMusic/raw/main/audio/Kenshi_Yonezu/${index}.mp3`;
-    music.src = `https://github.com/Masdarul/WebMusic/raw/main/audio/Kenshi_Yonezu/${index}.mp3`;
-    poster_master_play.src =`https://raw.githubusercontent.com/Masdarul/WebMusic/main/img/Kenshi_Yonezu/${index}.jpg`;
+    download_music.href = `https://github.com/Masdarul/WebMusic/raw/main/audio/MWAM/${index}.mp3`;
+    music.src = `https://github.com/Masdarul/WebMusic/raw/main/audio/MWAM/${index}.mp3`;
+    poster_master_play.src =`https://raw.githubusercontent.com/Masdarul/WebMusic/main/img/MWAM/${index}.jpg`;
     music.play();
     let song_title = songs.filter((ele)=>{
         return ele.id == index;
@@ -351,9 +345,9 @@ next.addEventListener('click', ()=>{
     if (index > Array.from(document.getElementsByClassName('songItem')).length) {
         index = 1;
         }
-    music.src = `https://github.com/Masdarul/WebMusic/raw/main/audio/Kenshi_Yonezu/${index}.mp3`;
-    download_music.href = `https://github.com/Masdarul/WebMusic/raw/main/audio/Kenshi_Yonezu/${index}.mp3`;
-    poster_master_play.src =`https://raw.githubusercontent.com/Masdarul/WebMusic/main/img/Kenshi_Yonezu/${index}.jpg`;
+    music.src = `https://github.com/Masdarul/WebMusic/raw/main/audio/MWAM/${index}.mp3`;
+    download_music.href = `https://github.com/Masdarul/WebMusic/raw/main/audio/MWAM/${index}.mp3`;
+    poster_master_play.src =`https://raw.githubusercontent.com/Masdarul/WebMusic/main/img/MWAM/${index}.jpg`;
     music.play();
     let song_title = songs.filter((ele)=>{
         return ele.id == index;
