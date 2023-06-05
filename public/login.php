@@ -11,7 +11,7 @@ if (isset($_POST['user_name'])) {
 
     $result = mysqli_query($cn, $query);
     if (mysqli_num_rows($result)==1) {
-        header("Location: welcome.html");
+        header("Location: ../index.html");
     } else {
         $msg = "Password Salah";
     }
@@ -25,7 +25,7 @@ if (isset($_POST['user_name'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="login_signup.css">
     <title>Login</title>
     <link rel="icon" type="image/x-icon" href="icon.png">
